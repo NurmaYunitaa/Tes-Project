@@ -1,6 +1,6 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Home, Splash} from '../pages';
+import {Home, Splash,Calculator} from '../pages';
 
 const Stack = createNativeStackNavigator();
 
@@ -9,6 +9,7 @@ const Router = () => {
     <Stack.Navigator initialRouteName="splash">
       <Stack.Screen name="Splash" component={Splash} options={{headerShown: false}} />
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+      <Stack.Screen name="Calculator" component={Calculator} options={{headerShown: false}} />
     </Stack.Navigator>
     )
 }

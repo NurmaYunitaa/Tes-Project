@@ -1,4 +1,4 @@
 import Home from './Home'
 import Splash from './Splash'
-
-export{Home, Splash} 
+import Calculator from './Calculator'
+export{Home, Splash, Calculator} 
