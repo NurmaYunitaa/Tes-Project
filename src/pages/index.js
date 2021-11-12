@@ -4,4 +4,5 @@ import Segitiga from './Segitiga'
 import Persegi from './Persegi'
 import Lingkaran from './Lingkaran'
 import Grade from './Grade'
-export{Home, Splash, Segitiga, Persegi, Lingkaran, Grade} 
+import PajakMotor from './PajakMotor'
+export{Home, Splash, Segitiga, Persegi, Lingkaran, Grade, PajakMotor} 

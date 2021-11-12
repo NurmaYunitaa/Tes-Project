@@ -1,6 +1,6 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {Home, Splash, Segitiga, Persegi, Lingkaran, Grade} from '../pages';
+import {Home, Splash, Segitiga, Persegi, Lingkaran, Grade, PajakMotor} from '../pages';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +13,8 @@ const Router = () => {
       <Stack.Screen name="Persegi" component={Persegi} options={{headerShown: false}} />
       <Stack.Screen name="Lingkaran" component={Lingkaran} options={{headerShown: false}} />
       <Stack.Screen name="Grade" component={Grade} options={{headerShown: false}} />
+      <Stack.Screen name="PajakMotor" component={PajakMotor} options={{headerShown: false}} />
+
     </Stack.Navigator>
     )
 }

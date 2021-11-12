@@ -29,6 +29,12 @@ export default class Home extends Component {
                 onPress={ () => navigation.replace("Grade")}
                 />
                 </View>
+
+                <View style={{ margin: 15 }}>
+                <Button title="PAJAK MOTOR"
+                onPress={ () => navigation.replace("PajakMotor")}
+                />
+                </View>
             </View>
             
         )
