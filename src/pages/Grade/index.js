@@ -78,7 +78,7 @@ export default class Grade extends Component {
               />
               </View>
               <View style={{margin:10}}>
-              <Button title="Back to Home" onPress={ () => navigation.replace('Home')}/>
+              <Button title="Kembali" onPress={ () => navigation.replace('Home')}/>
               </View>
          </View>
   

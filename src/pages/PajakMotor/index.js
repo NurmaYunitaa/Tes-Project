@@ -8,12 +8,13 @@ import React, { Component } from 'react';
    View
  } from 'react-native';
  
- export default class Lingkaran extends Component {
+ export default class PajakMotor extends Component {
   constructor(props){
     super(props)
     this.state = {
-      jari_jari:0,
-      luas:0
+      SWDKLLJ:35000,
+      NJKB:0,
+      hasil:0
     };
   }
 
@@ -24,20 +25,20 @@ import React, { Component } from 'react';
 
         <View style={{backgroundColor:'#2196f3'}}>
            <Text style = {{padding: 10, fontSize: 20, color: 'white', textAlign:'center'}} >
-            Menghitung Luas Lingkaran
+            Menghitung Pajak Motor
           </Text>
          </View>
         
         <View style={{margin:20,padding: 10, backgroundColor:'#e3f2fd'}}>
             <TextInput style = {{height: 40}}
-              placeholder="Masukkan Jari-Jari"
-              onChangeText={(jari_jari)=>this.setState({jari_jari})}
+              placeholder="Masukkan NJKB"
+              onChangeText={(NJKB)=>this.setState({NJKB})}
               keyboardType = 'numeric'
             />
             <View style={{margin:15}}>
             <Button
               onPress={()=>this.setState({
-                luas: (3.142857142857143*this.state.jari_jari*this.state.jari_jari)
+                hasil: (2/100*this.state.NJKB+this.state.SWDKLLJ)
               })}
               title="Hitung"
               accessibilityLabel="Klik untuk menghitung"
@@ -50,8 +51,7 @@ import React, { Component } from 'react';
 
       <View style={{margin:20, backgroundColor:'#90caf9'}}>
          <Text style = {{padding: 10, fontSize: 20}} >
-             Jari-Jari =  {this.state.jari_jari} {"\n"}
-             Luas = {this.state.luas}
+             Pajak yang dibayar  = {this.state.hasil}
          </Text>
       </View>       
    </View>   
