@@ -1,4 +1,7 @@
 import Home from './Home'
 import Splash from './Splash'
-import Calculator from './Calculator'
-export{Home, Splash, Calculator} 
+import Segitiga from './Segitiga'
+import Persegi from './Persegi'
+import Lingkaran from './Lingkaran'
+import Grade from './Grade'
+export{Home, Splash, Segitiga, Persegi, Lingkaran, Grade} 
